@@ -42,10 +42,10 @@ def lightning(color):
     time.sleep(3)
     for i in range(5):
         sleep = random.randint(1,4) / 50
-        np.fill((white))
+        np.fill((purple))
         np.show()
         time.sleep(sleep)
-        np.fill((blue))
+        np.fill((white))
         np.show()
         time.sleep(sleep)
         
@@ -55,4 +55,8 @@ def fire(num, prim_color, sec_color1, sec_color2):
         sparkle(sec_color2, sec_color1, 0.2, 0.1)
    
 while True:
-    fire(5, purple, yellow, orange)
+    fire(5, green, yellow, orange)
+    chase()
+    sparkle(orange, purple, 0.1, 6)
+    lightning(purple)
+    
